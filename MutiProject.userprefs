@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{2D142AF2-519A-4E37-B866-165B94B7B47C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/TabItem/TabABC.xaml.cs">
+    <Files>
+      <File FileName="Views/TabItem/TabABC.xaml.cs" Line="30" Column="15" />
+      <File FileName="Views/View/contentImage.xaml" Line="35" Column="18" />
+      <File FileName="Views/View/contentImage.xaml.cs" Line="27" Column="1" />
+      <File FileName="Views/View/OrderScreen.cs" Line="9" Column="6" />
+      <File FileName="Views/View/OrderScreen.xaml" Line="7" Column="26" />
+      <File FileName="ViewModels/ViewModelBase.cs" Line="17" Column="9" />
+      <File FileName="Views/View/MasterDetailScreen.xaml" Line="12" Column="1" />
+      <File FileName="ViewModels/BaseScreen/BaseScreen.cs" Line="6" Column="64" />
+      <File FileName="Views/Base.cs" Line="7" Column="22" />
+      <File FileName="MutiProject/App.xaml.cs" Line="15" Column="84" />
+      <File FileName="MutiProject/App.xaml" Line="12" Column="1" />
+      <File FileName="MutiProject/obj/Debug/MutiProject.App.xaml.g.cs" Line="19" Column="1" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MutiProject.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.6B041FF8-473C-48DF-BAAA-0863D0125B9C" automaticSigning="False">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.MutiProject.iOS>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.MutiProject.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+</Properties>

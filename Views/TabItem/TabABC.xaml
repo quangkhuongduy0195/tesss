@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage BackgroundColor="Black" xmlns:local="clr-namespace:Views.View;assembly=Views" Title="ABC" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:behaviors="clr-namespace:Prism.Behaviors;assembly=Prism.Forms" xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" prism:ViewModelLocator.AutowireViewModel="True" x:Class="Views.TabItem.TabABC">
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <!--Menu-->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HeightRequest="64" BackgroundColor="Black" Padding="0,20,0,0">
+            <StackLayout WidthRequest="44" HeightRequest="44" Padding="16">
+                <Image x:Name="imgMenu" BackgroundColor="Transparent" Source="icon_menu.png" WidthRequest="28" HeightRequest="28"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand" Orientation="Vertical">
+                <Label Text="{Binding Title}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="White" />
+                <Label IsVisible="false" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+            <StackLayout WidthRequest="44" HeightRequest="44" Padding="16">
+                <Image BackgroundColor="Transparent" Source="settings.png" WidthRequest="28" HeightRequest="28" />
+            </StackLayout>
+        </StackLayout>
+        <!--End Menu-->
+
+        <!--Conten-->
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Black" Orientation="Vertical" Spacing="0">
+            <StackLayout x:Name="img" HorizontalOptions="FillAndExpand" Orientation="Horizontal" Spacing="0">
+                <local:contentImage/>
+            </StackLayout>
+            <ScrollView Orientation="Horizontal" HorizontalOptions="FillAndExpand" HeightRequest="48" Margin="0, 15, 0, 0">
+                <StackLayout HorizontalOptions="FillAndExpand" HeightRequest="48" Orientation="Horizontal" Spacing="2" >
+                <Button BorderRadius="0" BackgroundColor="Gray" TextColor="White" HorizontalOptions="FillAndExpand" Text="buttonbutton 1"/>
+                <Button BorderRadius="0" BackgroundColor="Gray" TextColor="White" HorizontalOptions="FillAndExpand" Text="button 2"/>
+                <Button BorderRadius="0" BackgroundColor="Gray" TextColor="White" HorizontalOptions="FillAndExpand" Text="button 3"/>
+                <Button BorderRadius="0" BackgroundColor="Gray" TextColor="White" HorizontalOptions="FillAndExpand" Text="button 4"/>
+                <Button BorderRadius="0" BackgroundColor="Gray" TextColor="White" HorizontalOptions="FillAndExpand" Text="button 5"/>
+            </StackLayout>
+            </ScrollView>
+
+            <StackLayout Spacing="0">
+                <Grid RowSpacing="2" ColumnSpacing="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*" />
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="1.5*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="48"/>
+                        <RowDefinition Height="48"/>
+                        <RowDefinition Height="48"/>
+                        <RowDefinition Height="48"/>
+                    </Grid.RowDefinitions>
+                    
+                    <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="0" BackgroundColor="#3F3F3F" >
+                        <Label VerticalOptions="FillAndExpand" Text="1" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                        <ContentView HeightRequest="2" BackgroundColor="Blue"></ContentView>
+                    </StackLayout>
+                    <Label Grid.Row="0" Grid.Column="1" Text="" TextColor="White" BackgroundColor="#3F3F3F"/>
+                    <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="2" BackgroundColor="#3F3F3F" >
+                        <Label VerticalOptions="FillAndExpand" Text="4" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                        <ContentView HeightRequest="2" BackgroundColor="Red"></ContentView>
+                    </StackLayout>
+                    
+                    <ContentView Grid.Row="1" Grid.Column="0" BackgroundColor="#3F3F3F" Padding="5" >
+                        <Label Text="5" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+                    </ContentView>
+                    <ContentView  Grid.Row="1" Grid.Column="1" BackgroundColor="Gray" Padding="5" >
+                        <Label Text="6" TextColor="White" BackgroundColor="Gray" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    </ContentView>
+                    <ContentView Grid.Row="1" Grid.Column="2" BackgroundColor="#3F3F3F" Padding="5" >
+                        <Label Text="-" TextColor="White"  VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+                    </ContentView>
+
+                    <ContentView Grid.Row="2" Grid.Column="0" BackgroundColor="#3F3F3F" Padding="5" >
+                        <Label Text="8" TextColor="White"  VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+                    </ContentView>
+                    <ContentView Grid.Row="2" Grid.Column="1" BackgroundColor="Gray" Padding="5" >
+                        <Label Text="9" TextColor="White" BackgroundColor="Gray" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    </ContentView>
+                    <ContentView Grid.Row="2" Grid.Column="2" BackgroundColor="#3F3F3F" Padding="5" >
+                        <Label Text="-" TextColor="White"  VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+                    </ContentView>
+
+                    <ContentView Grid.Row="3" Grid.Column="0" BackgroundColor="#3F3F3F" Padding="5" >
+                        <Label  Text="88" TextColor="White"  VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+                    </ContentView>
+                    <ContentView Grid.Row="3" Grid.Column="1" BackgroundColor="Gray" Padding="5" >
+                        <Label Text="88" TextColor="White" BackgroundColor="Gray" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    </ContentView>
+                    <ContentView Grid.Row="3" Grid.Column="2" BackgroundColor="#3F3F3F" Padding="5" >
+                        <Label Text="-" TextColor="White"  VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+                    </ContentView>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout Spacing="5" Orientation="Horizontal" VerticalOptions="Fill" HorizontalOptions="FillAndExpand" Margin="20, 10">
+                <Label x:Name="lbl" TextColor="White" Text="text text" VerticalTextAlignment="Center"/>
+                <Button x:Name="btn1" TextColor="White" Text="abc" BackgroundColor="Silver"/>
+                <Button x:Name="btn2" TextColor="White" Text="abc" BackgroundColor="Silver"/>
+            </StackLayout>
+
+            <StackLayout Spacing="5" Orientation="Horizontal" VerticalOptions="Fill" HorizontalOptions="FillAndExpand" Margin="20, 10">
+                <Label x:Name="lbl2" TextColor="White" Text="text text" VerticalTextAlignment="Center"/>
+                <Button x:Name="btn3" TextColor="White" Text="abc" BackgroundColor="Silver"/>
+                <Button x:Name="btn4" TextColor="White" Text="abc" BackgroundColor="Silver"/>
+                <Entry x:Name="et" BackgroundColor="Silver" Placeholder="abc"/>
+                <Button x:Name="btn5" TextColor="White" Text="abc" BackgroundColor="Silver"/>
+            </StackLayout>
+
+            <StackLayout Spacing="5" Orientation="Horizontal" VerticalOptions="Fill" HorizontalOptions="FillAndExpand" Margin="20, 10">
+                <Label x:Name="lbl3" TextColor="White" Text="text text" VerticalTextAlignment="Center"/>
+                <Button x:Name="btn6" TextColor="White" Text="abc" BackgroundColor="Silver"/>
+                <Entry x:Name="et2" BackgroundColor="Silver" Placeholder="abc"/>
+                <Button x:Name="btn7" TextColor="White" Text="abc" BackgroundColor="Silver"/>
+            </StackLayout>
+            
+        </StackLayout>
+        <!--End Conten-->
+    </StackLayout>
+</ContentPage>
